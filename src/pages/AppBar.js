@@ -1,7 +1,13 @@
 import React from "react";
 import logout from "../images/logout.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function AppBar() {
+  const navigate = useNavigate();
+  const handelLogOut = () => {
+    localStorage.clear();
+    navigate("/");
+  };
   return (
     <div className="appbar-container">
       <div className="appbar-form-container">
@@ -14,7 +20,11 @@ export default function AppBar() {
         </form>
       </div>
       <button className="btn-logout">
-        <img className="img-logout" src={logout}></img>
+        <img
+          className="img-logout"
+          src={logout}
+          onClick={() => handelLogOut()}
+        ></img>
       </button>
     </div>
   );
