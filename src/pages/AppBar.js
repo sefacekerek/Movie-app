@@ -14,7 +14,7 @@ export default function AppBar() {
         <form className="appbar-form">
           <label>Search Movie</label>
           <div>
-            <input className="search-movie-input" type="text" />
+            <input className="search-movie-input" type="text" autoFocus />
             <button className="btn-search">Search</button>
           </div>
         </form>

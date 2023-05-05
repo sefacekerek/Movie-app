@@ -40,7 +40,7 @@ const navigate = useNavigate();
       <form className="form-container">
         <img src={user} className="user-img"></img>
         <label className="form-email" >Email</label>
-        <input className="form-input" type="email" onChange={(e)=>handelEmail(e)}></input>
+        <input className="form-input" autoFocus type="email" onChange={(e)=>handelEmail(e)}></input>
         <label className="form-password" >Password</label>
         <input className="form-input" type="password" onChange={(e)=>handelPassword(e)}></input>
         <button type="button" className="form-button" onClick={()=>submitLogin()}>Login</button>

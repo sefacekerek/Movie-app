@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .login-container {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -66,6 +67,7 @@
   border-radius: 20px;
   padding: 15px;
   width: 90%;
+  margin: auto;
 }
 
 .appbar-form-container {
@@ -118,9 +120,23 @@
   background-color: white;
 }
 
-.movie-list-container{
+.movie-list-container {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.movie-detail-container {
+  border: 1px solid rgb(96, 144, 24);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.img-movie-detail {
+  width: 70%;
 }

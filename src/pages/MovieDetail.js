@@ -15,6 +15,13 @@ useEffect(() => {
 
 
   return (
-    <div>qq</div>
+    <div>
+        <div className="movie-detail-container">
+          <img
+            className="img-movie-detail"
+            src={"https://image.tmdb.org/t/p/w500" + movie.poster_path}
+          ></img>
+        </div>
+    </div>
   )
 }
