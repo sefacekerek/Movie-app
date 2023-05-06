@@ -10,7 +10,7 @@ export default function MovieDetail() {
   
 
   return (
-    <div>
+    <div style={{height:"100vh"}}>
         <div className="movie-detail-container">
           <img
             className="img-movie-detail"

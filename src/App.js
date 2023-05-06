@@ -1,9 +1,7 @@
-import { useContext, useEffect } from "react";
 import "./App.css";
 import AppBar from "./pages/AppBar";
 import Login from "./pages/Login";
 import MovieList from "./pages/MovieList";
-import MovieContext from "./constexts/ContextMovie";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MovieDetail from "./pages/MovieDetail";
 import PrivateRoute from "./utilities/PrivateRoute";

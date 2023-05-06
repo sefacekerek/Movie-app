@@ -8,7 +8,6 @@ export default function MovieList() {
 
   useEffect(() => {
     listMovies();
-    console.log(process.env);
   }, []);
  
   return (

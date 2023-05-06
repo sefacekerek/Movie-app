@@ -10,14 +10,12 @@ function ContextProvider({ children }) {
 
     const listMovies = async ()=>{
        const response = await getAllMovies();
-       console.log(response.data.results)
        setMovies(response.data.results)
     }
    
    const searchMovie = async (query)=>{
     const response = await searchMovieRequest(query);
     setMovies(response.data.results)
-    console.log(response)
    }
 
     const sharedValueAndMethods = {

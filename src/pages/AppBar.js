@@ -15,21 +15,19 @@ const navigate = useNavigate();
   };
 
 const handelSearch = (e)=>{
-  setSearchQuery((e.target.value))
-  
+  setSearchQuery((e.target.value)) 
 }
 
 const submitSearch =async (event) =>{
   event.preventDefault();
-  console.log(searchQuery)
   await searchMovie(searchQuery)
 }
   
   return (
-    <div className="appbar-container">
+    <div className="appbar-container" >
       <div className="appbar-form-container">
         <form className="appbar-form">
-          <label>Search Movie</label>
+          <label style={{color:"white"}}>Search Movie</label>
           <div>
             <input className="search-movie-input" type="text" autoFocus onChange={(e)=>handelSearch(e)} />
             <button className="btn-search" onClick={submitSearch} >Search</button>
@@ -37,6 +35,7 @@ const submitSearch =async (event) =>{
         </form>
       </div>
       <button className="btn-logout">
+        
         <img
           className="img-logout"
           src={logout}
