@@ -25,3 +25,8 @@ export const authenticateUserRequest = async (username,password,request_token) =
     )
     return response
 }
+
+export const searchMovieRequest = async (query) =>{
+  const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=dc636b034935f18ec89ce9aed3974dfb&query=${query}&page=1`)
+  return response;
+}

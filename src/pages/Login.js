@@ -9,7 +9,6 @@ export default function () {
   const [password, setPassword] = useState("")
 
   const handelEmail = (e)=>{
-    console.log(e)
     setEmail(e.target.value)
     
   }

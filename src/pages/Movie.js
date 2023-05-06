@@ -17,8 +17,9 @@ export default function Movie({ data }) {
             className="img-movie"
             src={"https://image.tmdb.org/t/p/w500" + data.poster_path}
           ></img>
-          <div>
-            <button className="btn-more">More...</button>
+          <div className="movie-div">
+            <p>{data.title}</p>
+            
           </div>
         </div>
     </div>

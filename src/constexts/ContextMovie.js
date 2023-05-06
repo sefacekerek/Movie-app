@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { useState } from "react";
-import {getAllMovies} from "../services/RequestMovie"
+import {getAllMovies,searchMovieRequest} from "../services/RequestMovie"
 
 
 const MovieContext = createContext();
@@ -14,11 +14,16 @@ function ContextProvider({ children }) {
        setMovies(response.data.results)
     }
    
-   
+   const searchMovie = async (query)=>{
+    const response = await searchMovieRequest(query);
+    setMovies(response.data.results)
+    console.log(response)
+   }
 
     const sharedValueAndMethods = {
         listMovies ,
-        movies
+        movies,
+        searchMovie
     };
   
     return <MovieContext.Provider value={sharedValueAndMethods}>{children}</MovieContext.Provider>;
